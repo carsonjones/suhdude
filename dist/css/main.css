@@ -1269,45 +1269,6 @@ th {
   max-width: 100%;
   height: auto;
 }
-body:after {
-  /*This adds a label in the top-left corner that displays the current media query state.*/
-  background: #f5f5f5;
-  content: "";
-  background: orange;
-  content: "xs";
-  color: #f5f5f5;
-  left: 0;
-  opacity: .5;
-  padding: 1rem 1rem .5rem 1rem;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  z-index: 99;
-}
-@media only screen and (max-width: 48rem) {
-  body:after {
-    background: orange;
-    content: "xs";
-  }
-}
-@media only screen and (min-width: 48em) {
-  body:after {
-    background: purple;
-    content: "sm";
-  }
-}
-@media only screen and (min-width: 65em) {
-  body:after {
-    background: green;
-    content: "md";
-  }
-}
-@media only screen and (min-width: 76em) {
-  body:after {
-    background: blue;
-    content: "lg";
-  }
-}
 body {
   background: #ffffff;
   font-family: 'Lato', sans-serif;
