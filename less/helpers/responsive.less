@@ -1,0 +1,42 @@
+.img-responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+@xs: ~"only screen and (max-width: 48rem)";
+@sm: ~"only screen and (min-width: 48em)";
+@md: ~"only screen and (min-width: 65em)";
+@lg: ~"only screen and (min-width: 76em)";
+
+
+// Tester Tag
+body:after { /*This adds a label in the top-left corner that displays the current media query state.*/
+	background: @white;
+	content: "";
+	background: orange;
+	content: "xs";
+  color: @white;
+  left: 0;
+  opacity: .5;
+  padding: 1rem 1rem .5rem 1rem;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  z-index: 99;
+  @media @xs {
+    background: orange;
+    content: "xs";
+  }
+  @media @sm {
+    background: purple;
+    content: "sm";
+  }
+  @media @md {
+    background: green;
+    content: "md";
+  }
+  @media @lg {
+    background: blue;
+    content: "lg";
+  }
+}
