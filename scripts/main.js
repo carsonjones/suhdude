@@ -1,11 +1,27 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var SuhDude = require('./suhdude');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Router, Route } from 'react-router';
+import { hashHistory } from 'react-router'
+
+import SuhDude from './components/app';
+
+import dudes from './data/dudes';
+import suhs from './data/audio';
+
+// Routes
+// var routes = (
+//   <Router history={hashHistory}>
+//     <Route path="/" component={SuhDude}/>
+//   </Router>
+// )
+
+// ReactDOM.render(
+//  routes,
+//   document.querySelector('#cool')
+// );
+
 
 ReactDOM.render(
-  <SuhDude  preload='none'
-            text='suhhhhhhdude'
-            containerClass='asuh'
-            mimeType= 'audio/mpeg'/>,
-  document.getElementById('cool')
+  <SuhDude />,
+  document.querySelector('#cool')
 );

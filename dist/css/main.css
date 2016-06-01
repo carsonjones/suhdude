@@ -4221,7 +4221,7 @@ a:hover {
   box-sizing: border-box;
   overflow: hidden;
 }
-.play {
+.btn {
   color: #ffffff;
   background: #F1592A;
   padding: 15px 20px 10px;
@@ -4237,7 +4237,7 @@ a:hover {
   transition: border-bottom 0.5s;
   text-decoration: none;
 }
-.play:hover {
+.btn:hover {
   border-bottom: 5px solid #9E3214;
   color: #ffffff;
 }

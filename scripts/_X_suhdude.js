@@ -66,17 +66,8 @@ var SuhDude = React.createClass({
   },
 
   audioPlay: function() {
-    // only need this if we want to make it a soundboard - allows us to stop
-    // ... other audio on page
-    // try {
-    //   var audioElements = document.getElementsByTagName('audio');
-    //   for(var i = 0; i < audioElements.length; i++) {
-    //     audioElements[i].pause();
-    //   }
-    // } catch(e) {}
     this.refs.player.load();
     this.refs.player.play();
-    // console.log(this.state.src);
     this.setState({
       playing: true
     });
